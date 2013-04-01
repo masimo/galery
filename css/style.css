@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #000 url('../images/bg.png') no-repeat;
+
+}
+#imageGalery{
+	position: fixed;
+	overflow: hidden;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+#overlayLadingPanel{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	z-index: 995;
+}
+.imageLineWrap{
+	position: absolute;
+	top: 40%;
+}
+.imageWrap{
+	position: relative;
+	float: left;
+	cursor: pointer;
+	margin-left: -30px;
+	padding: 10px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+		/*shadow*/
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.25);
+	        box-shadow: 0 0 4px rgba(0,0,0,0.25);
+	
+}
+.turnLeft,
+.turnRight{
+	position: fixed;
+	top: 50%;
+	width: 32px;
+	height: 32px;
+	left: 42%;
+	background: transparent url(../images/buttons.png);
+	background-position: 0 0;
+	cursor: pointer;
+	z-index: 996;
+}
+.turnRight{
+	background-position: -32px 0;
+	margin-right: 32px;
+	left: 58%;
+}
+#wholePic{
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #000;
+	z-index: 400;
+}
+#wholePic img{
+	display: block !important;
+	margin: auto;
+}
+.closeBut{
+	position: fixed;
+	display: none;
+	top:40px;
+	right: 30px;
+	height: 32px;
+	width: 32px;
+	background: transparent url(../images/buttons.png) -64px 0;
+	z-index: 801;
+	cursor: pointer;
+}
+.closeBut:hover,
+.turnLeft:hover,
+.turnRight:hover{
+	border-color: #999;
+}
+#infoScreen{
+	position: absolute;
+	display: none;
+	width: 300px;
+	height: 150px;
+	bottom: 20px;
+	right: 20px;
+	/*border: 2px solid #CCC;*/
+	background-repeat: no-repeat;
+	background-color: #FFF;
+	z-index: 900;
+}
+.infoScreenOverlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 999;
+	background: rgba(0,0,0,0.55);
+}
+.infoScreenView{
+	position: absolute;
+	background-repeat: no-repeat;
+	/*border: 1px solid #f00;*/
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+	z-index: 1000;
+}
+#toolsContainer{
+	position:fixed;
+	display:none;
+	left:50%;
+	bottom:30px;
+	padding:5px;
+	border: 1px solid #CCC;
+	z-index:1000;
+		/*radius*/
+	-webkit-border-radius: 0.6em;
+	        border-radius: 0.6em;
+}
+.zoomBut,
+.zoomOutBut{
+	width:32px;
+	height:32px;
+	float: left;
+	position:relative;
+	cursor:pointer;
+	background: transparent url(../images/buttons.png) -96px 0;
+		/*radius*/
+	-webkit-border-radius: 0.3em;
+	        border-radius: 0.3em;
+}
+.zoomOutBut{
+	background-position:-128px 0;
+}
+.zoomBut:hover,
+.zoomOutBut:hover{
+	
+	/*shadow*/
+	-webkit-box-shadow: 0 3px 4px rgb(255,255,255)inset;
+	        box-shadow: 0 3px 4px rgb(255,255,255)inset;
+}
+#preloader{
+	position:absolute;
+	padding-top:150px;
+	height: 50px;
+	width:200px;
+	text-align: center;
+	top:50%;
+	left:50%;
+	margin-top:-100px;
+	margin-left:-100px;
+	background: #444 url('../images/ajax-loader-1.gif') 50% 50% no-repeat;
+	z-index:1200;
+	color:#FFF;
+	font-weight: bold;
+	font-size:1em;
+	font-family: Arial, Verdana;
+		/*radius*/
+	-webkit-border-radius:10em;
+	-moz-border-radius:10em;
+	border-radius:10em;
+}
