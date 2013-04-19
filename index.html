@@ -10,10 +10,15 @@
 
 <script src="javaScript.js"></script>
 <script>
+$(function() {
+
+	var viewFunc = new imGaleryView(); // Constructor __>
+
 	viewFunc.config({
-	xmlPath: "imageGalery.xml",
-	galeryWrapID: "imageGalery"
+		xmlPath: "imageGalery.xml",
+		galeryWrapID: "imageGalery"
 	});
+});
 </script>
 
 
