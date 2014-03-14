@@ -10,17 +10,16 @@
 </script>
         <script src="javaScript.js">
 </script>
-        <script>
+<script>
 $(function() {
 
-	var viewFunc = new imGaleryView(); // Constructor __>
+    var viewFunc = new imGaleryView({
+        jsonPath: "imageGalery.json",
+        galeryWrapID: "imageGalery"
+    });
 
-	viewFunc.config({
-		xmlPath: "imageGalery.xml",
-		galeryWrapID: "imageGalery"
-	});
 });
-        </script>
+ </script>
     </head>
     <body>
 
